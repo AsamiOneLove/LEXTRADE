@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LEXTENDER — Тендерні послуги</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #333333;
+      background: radial-gradient(circle, rgba(51, 51, 51, 1) 0%, rgba(17, 17, 17, 1) 50%, rgba(51, 51, 51, 1) 100%);
+      color: #f5f5f5;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header img {
+      max-width: 300px;
+    }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .services ul li {
+      margin: 0.5rem 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #3a3a3a;
+      color: #fff;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      background-color: #999;
+      color: #111;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .socials {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      font-size: 2rem;
+      color: #f5f5f5;
+      text-decoration: none;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 300px;
+      margin: 2rem 0;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #777;
+      font-size: 0.9rem;
+      background: #121212;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="LEXTENDER Logo" />
+  <h1>LEXTENDER</h1>
+  <p>Професійні тендерні послуги</p>
+</header>
+
+<section class="glass">
+  <h2>Про компанію</h2>
+  <p>
+    Компанія <strong>LEXTENDER</strong> — це команда фахівців, яка допомагає бізнесу брати участь у державних та комерційних тендерах. Ми надаємо повний супровід від підготовки документів до участі й перемоги в торгах.
+  </p>
+</section>
+
+<section class="glass services">
+  <h2>Наші послуги</h2>
+  <ul>
+    <li>🔍 Пошук актуальних тендерів</li>
+    <li>📄 Підготовка тендерної документації</li>
+    <li>⚖️ Юридичний супровід</li>
+    <li>📚 Консультації та навчання</li>
+    <li>📊 Аналіз конкурентів</li>
+  </ul>
+</section>
+
+<section class="glass">
+  <h2>Наша робота</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="logo.jpg" alt="Фото 1" /></div>
+      <div class="swiper-slide"><img src="logo.jpg" alt="Фото 2" /></div>
+      <div class="swiper-slide"><img src="logo.jpg" alt="Фото 3" /></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section class="glass contact-form">
+  <h2>Зв’язатися з нами</h2>
+  <form action="https://formspree.io/f/your_form_id" method="POST">
+    <input type="text" name="name" placeholder="Ваше ім'я" required />
+    <input type="email" name="email" placeholder="Ваш Email" required />
+    <textarea name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+    <button type="submit">Надіслати</button>
+  </form>
+</section>
+
+<section class="glass">
+  <h2>Ми в соцмережах</h2>
+  <div class="socials">
+    <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"><img src="inst.png" width="50" height="50"/></i></a>
+    <a href="https://t.me/yourprofile" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"><img src="tele.png" width="50" height="50"/></i></a>
+    <a href="https://wa.me/380XXXXXXXXX" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"><img src="what.png" width="50" height="50"/></i></a>
+    <a href="viber://chat?number=+380XXXXXXXXX" title="Viber"><i class="fab fa-viber"><img src="vibe.png" width="50" height="50"/></i></a>
+  </div>
+</section>
+
+<footer>
+  © 2025 LEXTENDER. Всі права захищені.
+</footer>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+</script>
+
+</body>
+</html>
